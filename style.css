@@ -1,105 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
 * {
-  font-family: "Rimouski";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-  background-color: #90db57;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("img/bg1.jpg");
+  min-height: 92vh;
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
-.container {
-  width: 300px;
-  background-color: #fff;
-
-  display: block;
-  margin: 0 auto;
-
+.header h4 {
+  color: #da1e4e;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.app-main {
+  min-height: 10vh;
+  width: 30vw;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 15px;
+  background: #c0dfec; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #92fe9d,
+    #c0dfec
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #92fe9d,
+    #c0dfec
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app-main > * {
+  margin-bottom: 20px;
+}
+.input-box {
+  width: 100%;
+  background: azure;
+  color: #e4603a;
+  font-weight: 500;
+  border: none;
+  font-size: 1.7rem;
   border-radius: 10px;
-  padding-bottom: 50px;
-}
-
-.app-title {
-  width: 300px;
-  height: 50px;
-  border-radius: 10px 10px 0 0;
-}
-
-.app-title p {
+  padding: 10px;
   text-align: center;
-  padding: 15px;
-  margin: 0 auto;
-  font-size: 1.2em;
-  color: #ff0505;
+  outline: none;
+  border: none;
 }
 
-.notification {
-  background-color: #261d8c;
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: #eff1f3;
   display: none;
+  background: linear-gradient(
+    to top,
+    #da1e4e,
+    #e4603a
+  );
+}
+.location-deatils {
+  font-weight: bold;
+}
+.weather-status {
+  padding: 20px;
+}
+.temp {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 20px 0px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+.weather {
+  margin-top: 25px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.min-max {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 15px;
 }
 
-.notification p {
-  color: #15ce97;
-  font-size: 1.2em;
-  margin: 0;
-  text-align: center;
-  padding: 10px 0;
+.day_details {
+  padding: 20px;
+}
+.sun-detail,
+.basic {
+  font-size: 1rem;
+}
+#weather-icon {
+  color: black;
 }
 
-.weather-container {
-  width: 300px;
-  height: 260px;
-  background-color: #f3f2f2c7;
-}
 
-.weather-icon {
-  width: 300px;
-  height: 128px;
-}
-
-.weather-icon img {
-  display: block;
-  margin: 0 auto;
-}
-
-.temperature-value {
-  width: 300px;
-  height: 60px;
-}
-
-.temperature-value p {
-  padding: 0;
-  margin: 0;
-  color: #253a87;
-  font-size: 4em;
-  text-align: center;
-  cursor: pointer;
-}
-
-.temperature-value p:hover {
-}
-
-.temperature-value span {
-  color: #293251;
-  font-size: 0.5em;
-}
-
-.temperature-description {
-}
-
-.temperature-description p {
-  padding: 8px;
-  margin: 0;
-  color: #293251;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.location {
-}
-
-.location p {
-  margin: 0;
-  padding: 0;
-  color: #1c3fbd;
-  text-align: center;
-  font-size: 0.8em;
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 95%;
+    padding: 10px;
+  }
+  body {
+    min-height: 94vh;
+  }
 }
