@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Weather App</title>
-    <link rel="icon" type="image/x-icon" href="/image/favicon2.ico">
-    <link rel="stylesheet" href="font/Rimouski.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="shortcut icon" href="img/bg.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body background="image\bg2.png">
-    
-    <div class="container">
-        <div class="app-title">
-            <p>Weather</p>
+
+<body>
+
+
+    <div class="app-main" id="parent">
+        <div class="header">
+            <h4>Get Weather</h4>
         </div>
-        <div class="notification"> </div>
-        <div class="weather-container">
-            <div class="weather-icon">
-                <img src="icons/unknown.png" alt="">
-            </div>
-            <div class="temperature-value">
-                <p>- °<span>C</span></p>
-            </div>
-            <div class="temperature-description">
-                <p> - </p>
-            </div>
-            <div class="location">
-                <p>-</p>
-            </div>
+        <div class="searchInputBox">
+            <input type="text" name="" id="input-box" class="input-box" placeholder="enter city name">
         </div>
+        <div class="weather-body" id="weather-body">
+            <!-- weather-body will be append through JavaScript -->
+        </div>
+            
     </div>
-    
-    <script src="app.js"></script>
+   
+
+    <script src="script.js"></script>
+    <!-- font awesome icon cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- sweetalert cdn........ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
+
 </html>
-
-
